@@ -1,0 +1,16 @@
+[package]
+name = "ableton-v"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+input-stream = "0.4.0"
+sqlx = { version = "0.6.3", features = ["runtime-tokio-native-tls", "sqlite", "time", "chrono"] }
+chrono = { version = "0.4.23", features = ["serde"] }
+sysinfo = "0.29.2"
+tokio = { version = "1.28.2", features = ["macros"] }
+flate2 = "1.0.26"
+xml-rs = "0.8.16"
